@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196bd1a3-92c1-4de9-b42c-d8d83b1daf73" name="Changes" comment="test-task">
-      <changelist_data name="fnx" email="fenix93.08@mail.ru" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fnxexample/FlightAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets.json" afterDir="false" />
-    </list>
+    <list default="true" id="196bd1a3-92c1-4de9-b42c-d8d83b1daf73" name="Changes" comment="test-task" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +18,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fnxSensei/test-task.git",
+    "accountId": "10a7ef02-6b9c-4237-9438-599b5deb4c42"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -87,8 +83,17 @@
       <option name="presentableId" value="Default" />
       <updated>1724867121972</updated>
       <workItem from="1724867123137" duration="1513000" />
-      <workItem from="1724868714208" duration="386000" />
+      <workItem from="1724868714208" duration="774000" />
     </task>
+    <task id="LOCAL-00001" summary="test-task">
+      <option name="closed" value="true" />
+      <created>1724869202139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724869202139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
