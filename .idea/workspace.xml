@@ -18,6 +18,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fnxSensei"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/fnxSensei/test-task.git",
@@ -83,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724867121972</updated>
       <workItem from="1724867123137" duration="1513000" />
-      <workItem from="1724868714208" duration="774000" />
+      <workItem from="1724868714208" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="test-task">
       <option name="closed" value="true" />

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -42,7 +43,7 @@ public class FlightAnalysis {
         // Минимальное время полета для каждого перевозчика
         Map<String, Long> minFlightTimes = new HashMap<>();
         for (Ticket ticket : vvoToTlvFlights) {
-            long flightTime = calculateFlightTime(ticket.departure_time, ticket.arrival_time);
+            long flightTime = calculateFlightTime(ticket.departure_date, ticket.departure_time, ticket.arrival_date, ticket.arrival_time);
             minFlightTimes.put(ticket.carrier, Math.min(minFlightTimes.getOrDefault(ticket.carrier, Long.MAX_VALUE), flightTime));
         }
 
@@ -61,9 +62,10 @@ public class FlightAnalysis {
         System.out.println("Разница между средней ценой и медианой: " + (averagePrice - medianPrice));
     }
 
-    private static long calculateFlightTime(String departureTime, String arrivalTime) {
-        LocalTime departure = LocalTime.parse(departureTime, TIME_FORMATTER);
-        LocalTime arrival = LocalTime.parse(arrivalTime, TIME_FORMATTER);
+    private static long calculateFlightTime(String departureDate, String departureTime, String arrivalDate, String arrivalTime) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy H:mm");
+        LocalDateTime departure = LocalDateTime.parse(departureDate + " " + departureTime, formatter);
+        LocalDateTime arrival = LocalDateTime.parse(arrivalDate + " " + arrivalTime, formatter);
         return Duration.between(departure, arrival).toMinutes();
     }
 }
